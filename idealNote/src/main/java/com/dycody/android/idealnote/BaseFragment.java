@@ -16,8 +16,8 @@ public class BaseFragment extends Fragment {
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
-		//RefWatcher refWatcher = IdealNote.getRefWatcher();
-		//refWatcher.watch(this);
+		RefWatcher refWatcher = IdealNote.getRefWatcher();
+		refWatcher.watch(this);
 	}
 
 }
