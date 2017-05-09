@@ -77,7 +77,7 @@ public class IdealNote extends MultiDexApplication {
 	
 	private void initLeakCanary() {
 		if (!LeakCanary.isInAnalyzerProcess(this)) {
-			//refWatcher = LeakCanary.install(this);
+			refWatcher = LeakCanary.install(this);
 		}
 	}
 
